@@ -20,6 +20,12 @@ You can define a macro:
     textsql -n countlines 'SELECT MID(line, 0,1) AS firstletter, COUNT(*) FROM txt(?) GROUP BY firstletter'
     textsql countlines myfile.txt 
 ```
+To delete macro:
+
+```
+    textsql -n countlines
+```
+
 
 ## Queries in files
 Run queries from files with parameters:
